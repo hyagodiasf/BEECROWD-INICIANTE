@@ -1,0 +1,20 @@
+
+"""RESOLUÇÃO 1"""
+SEGUNDOS = int(input())
+HORAS = SEGUNDOS / 3600 
+MINUTOS = ((SEGUNDOS - (HORAS * 3600)) / 60)
+SEGUNDOS = SEGUNDOS - (HORAS * 60) - (((SEGUNDOS - (HORAS * 60)) / 60) * 60)
+
+print("{}:{}:{}".format(HORAS,MINUTOS,SEGUNDOS))
+
+"""RESOLUÇÃO 2"""
+
+NUMERO = int(input())
+
+HORAS =  NUMERO//3600
+NUMERO = NUMERO - (HORAS * 3600)
+MINUTOS = NUMERO // 60
+NUMERO = NUMERO - (MINUTOS * 60)
+SEGUNDOS = NUMERO
+print("{}:{}:{}".format(HORAS,MINUTOS,SEGUNDOS))
+
